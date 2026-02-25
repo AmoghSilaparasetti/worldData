@@ -100,7 +100,8 @@ function showBarChart(data, div, x, y) {
 		.attr('width', d => xScale(d[x]))
 		.attr('height', yScale.bandwidth())
 		.attr('y', d => yScale(d[y]))
-		.attr('x', 0);
+		.attr('x', 0)
+		.attr('fill', div === "#poverty-histogram" ? '#D73027' : "#4575B4");
 
 }
 
@@ -167,7 +168,7 @@ function showHistogram(data, div, x, y, label) {
 		.attr('cx', d => xScale(d[x]  < 400000000000 ? d[x] :400000000000))
 		//.attr('height', yScale.bandwidth())
 		.attr('cy', d => yScale(d[y]))
-		.attr('r', 10)
+		.attr('r', 5)
 		.on('mouseover', function() {
             d3.select('#tooltip').style('display', 'block');
             d3.select(this).attr('stroke', '#333').attr('stroke-width', 2);

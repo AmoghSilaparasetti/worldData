@@ -74,23 +74,39 @@
 </body>
 
 <style>
-      #tooltip {
-   position: absolute;
-   display: none;
-   background: #fff;
-   box-shadow: 3px 3px 3px 0px rgb(92 92 92 / 0.5);
-   border: 1px solid #ddd;
-   font-size: 12px;
-   font-weight: 500;
-   padding: 8px;
-   min-width: 160px;
-   color: #333;
-   }
-   .tooltip-title {
-   color: #000;
-   font-size: 14px;
-   font-weight: 600;
-   }
+   /* Apply to the whole body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fcfcfc;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 0.5em;
+}
+
+.btn-primary {
+    background-color: #4575B4;
+    border: none;
+    border-radius: 20px; 
+    padding: 8px 20px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #31517e;
+    transform: translateY(-1px);
+}
+
+
+#tooltip {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border: 1px solid #eee;
+}
 
 </style>
 </html>
